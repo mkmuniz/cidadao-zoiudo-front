@@ -4,6 +4,7 @@ import { useState } from "react";
 import City from "../atoms/City";
 import DatePicker from "../atoms/Date";
 import State from "../atoms/State";
+import SearchButton from "../atoms/Search";
 
 export default function SearchSection() {
     const [params, setParams] = useState({
@@ -19,8 +20,6 @@ export default function SearchSection() {
         setParams({ ...params, UF: props.UF })
     };
 
-    console.log(params);
-
     return <>
         <div className="font-spacemono grid">
             <span className="text-3xl m-6">
@@ -32,15 +31,18 @@ export default function SearchSection() {
                 Nulla lacinia enim id ipsum blandit, ut bibendum dui varius. Pellentesque feugiat lobortis auctor.
             </span>
             <div className="grid grid-cols-3 m-6">
-                <div>
+                <div className="flex items-center">
                     <State getState={getState} />
                 </div>
-                <div>
+                <div className="flex items-center">
                     <City state={params.UF} getCity={getCity} />
                 </div>
-                <div>
+                <div className="flex items-center">
                     <DatePicker />
                 </div>
+            </div>
+            <div className="w-full flex justify-center items-center">
+                <SearchButton />
             </div>
         </div>
     </>;
