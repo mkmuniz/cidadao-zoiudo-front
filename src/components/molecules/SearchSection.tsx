@@ -1,8 +1,26 @@
+"use client"
+
+import { useState } from "react";
 import City from "../atoms/City";
 import DatePicker from "../atoms/Date";
 import State from "../atoms/State";
 
 export default function SearchSection() {
+    const [params, setParams] = useState({
+        UF: "0",
+        city: ""
+    });
+
+    const getCity = (value: any) => {
+        setParams({ ...params, city: value })
+    };
+
+    const getState = (props: any) => {
+        setParams({ ...params, UF: props.UF })
+    };
+
+    console.log(params);
+
     return <>
         <div className="font-spacemono grid">
             <span className="text-3xl m-6">
@@ -14,13 +32,13 @@ export default function SearchSection() {
                 Nulla lacinia enim id ipsum blandit, ut bibendum dui varius. Pellentesque feugiat lobortis auctor.
             </span>
             <div className="grid grid-cols-3 m-6">
-                <div className="">
-                    <State />
+                <div>
+                    <State getState={getState} />
                 </div>
-                <div className="">
-                    <City />
+                <div>
+                    <City state={params.UF} getCity={getCity} />
                 </div>
-                <div className="">
+                <div>
                     <DatePicker />
                 </div>
             </div>

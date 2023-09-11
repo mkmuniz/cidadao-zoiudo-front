@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>CidadãoZoiudo</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
           rel="stylesheet"
