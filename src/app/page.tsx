@@ -1,9 +1,9 @@
-import About from "@/components/molecules/About";
-import Header from "@/components/molecules/Header";
+import Apresentation from "@/components/organisms/Apresentation";
+import Search from "@/components/organisms/Search";
 
 export default function Home() {
   return <>
-    <Header />
-    <About />
+    <Apresentation />
+    <Search />
   </>
 }
