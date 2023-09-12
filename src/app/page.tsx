@@ -1,9 +1,7 @@
-import Apresentation from "@/components/organisms/Apresentation";
-import Search from "@/components/organisms/Search";
+import HomeTemplate from "@/components/template/Home";
 
 export default function Home() {
   return <>
-    <Apresentation />
-    <Search />
+    <HomeTemplate />
   </>
 }
