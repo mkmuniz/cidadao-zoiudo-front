@@ -7,5 +7,7 @@ export async function getStates() {
         return data;
     } catch (err: any) {
         console.log(err);
+
+        return err;
     };
 };

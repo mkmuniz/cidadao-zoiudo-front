@@ -17,7 +17,7 @@ export async function get(url: string, anotherUrl?: Boolean,) {
 }
 
 export async function post(url: string, body: any) {
-    const resp = await fetch('http://localhost:3000/api/' + url, {
+    const resp = await fetch('http://localhost:4000/' + url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
