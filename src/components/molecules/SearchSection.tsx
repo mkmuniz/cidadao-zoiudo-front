@@ -6,20 +6,27 @@ import DatePicker from "../atoms/Date";
 import State from "../atoms/State";
 import SearchButton from "../atoms/Search";
 
-export default function SearchSection() {
+export default function SearchSection({ getDataAboutSearch }: any) {
     const [params, setParams] = useState({
         UF: null,
-        city: null
+        city: null,
+        state: null
     });
 
     let button = false;
 
+    // useEffect(() => {
+    //     getDataAboutSearch({...params});
+    // }, [params]);
+
     const getCity = (value: any) => {
-        setParams({ ...params, city: value })
+        setParams({ ...params, city: value });
+        getDataAboutSearch({ ...params, city: value });
     };
 
-    const getState = (props: any) => {
-        setParams({ ...params, UF: props.UF })
+    const getState = (value: any) => {
+        setParams({ ...params, UF: value.UF, state: value.state });
+        getDataAboutSearch({ ...params, UF: value.UF, state: value.state });
     };
 
     if (!params.UF || !params.city) button = true;
@@ -46,7 +53,7 @@ export default function SearchSection() {
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">
-                <SearchButton info={params} isButtonDisabled={button}  />
+                <SearchButton info={params} isButtonDisabled={button} />
             </div>
         </div>
     </>;
