@@ -1,12 +1,12 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import City from "../atoms/City";
 import DatePicker from "../atoms/Date";
 import State from "../atoms/State";
 import SearchButton from "../atoms/Search";
 
-export default function SearchSection({ getDataAboutSearch }: any) {
+export default function SearchSection({getDataSearchResult, getDataAboutSearch }: any) {
     const [params, setParams] = useState({
         UF: null,
         city: null,
@@ -14,10 +14,6 @@ export default function SearchSection({ getDataAboutSearch }: any) {
     });
 
     let button = false;
-
-    // useEffect(() => {
-    //     getDataAboutSearch({...params});
-    // }, [params]);
 
     const getCity = (value: any) => {
         setParams({ ...params, city: value });
@@ -53,7 +49,7 @@ export default function SearchSection({ getDataAboutSearch }: any) {
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">
-                <SearchButton info={params} isButtonDisabled={button} />
+                <SearchButton info={params} isButtonDisabled={button} getDataSearchResult={getDataSearchResult} />
             </div>
         </div>
     </>;
