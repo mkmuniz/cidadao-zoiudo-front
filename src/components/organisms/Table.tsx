@@ -8,7 +8,7 @@ export default function Table({ headerData, resultData }: any) {
             <div className="border rounded border-white m-6">
                 <ResultHeader props={...headerData} />
                 <FiltersSearchResult />
-                <ResultTable data={resultData} />
+                {resultData ? <ResultTable data={resultData} /> : <></>}
             </div>
         </div>
     </>;
