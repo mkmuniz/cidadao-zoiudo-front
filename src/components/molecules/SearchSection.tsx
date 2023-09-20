@@ -5,12 +5,17 @@ import City from "../atoms/City";
 import DatePicker from "../atoms/Date";
 import State from "../atoms/State";
 import SearchButton from "../atoms/Search";
+import { format } from "date-fns";
 
-export default function SearchSection({getDataSearchResult, getDataAboutSearch }: any) {
-    const [params, setParams] = useState({
+export default function SearchSection({ getDataSearchResult, getDataAboutSearch }: any) {
+    const [params, setParams]: any = useState({
         UF: null,
         city: null,
-        state: null
+        state: null,
+        datePeriod: {
+            startDate: null,
+            endDate: null
+        },
     });
 
     let button = false;
@@ -25,7 +30,28 @@ export default function SearchSection({getDataSearchResult, getDataAboutSearch }
         getDataAboutSearch({ ...params, UF: value.UF, state: value.state });
     };
 
-    if (!params.UF || !params.city) button = true;
+    const getDatePeriod = (value: any) => {
+        const startDate = new Date(value.datePeriod.startDate);
+        const endDate = new Date(value.datePeriod.endDate);
+
+        const formatStartDate = format(startDate, 'dd-MM-yyyy');
+        const formatEndDate = format(endDate, 'dd-MM-yyyy');
+
+        setParams({
+            ...params, datePeriod: {
+                startDate: formatStartDate,
+                endDate: formatEndDate
+            }
+        });
+        getDataAboutSearch({
+            ...params, datePeriod: {
+                startDate: formatStartDate,
+                endDate: formatEndDate
+            }
+        });
+    };
+
+    if (!params.UF || !params.city || !params.datePeriod) button = true;
 
     return <>
         <div className="font-spacemono grid">
@@ -45,7 +71,7 @@ export default function SearchSection({getDataSearchResult, getDataAboutSearch }
                     <City state={params.UF} getCity={getCity} />
                 </div>
                 <div className="flex items-center">
-                    <DatePicker />
+                    <DatePicker getDate={getDatePeriod} />
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">

@@ -1,6 +1,5 @@
 "use client"
 
-import fetch from "node-fetch";
 import { useEffect, useState } from "react"
 import { getStates } from "@/api/states";
 
@@ -23,7 +22,7 @@ export default function State({ getState }: any) {
                 <select id="states" onChange={(e) => getState(JSON.parse(e.target.value))} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
                     <option selected>Escolha um Estado</option>
                     {states && states.map((state: any) => {
-                        return <option key={state.id} value={JSON.stringify({ UF: state.id, state: state.nome })}>{state.sigla} - {state.nome}</option>
+                        return <option key={state.id} value={JSON.stringify({ UF: state.sigla, state: state.nome })}>{state.sigla} - {state.nome}</option>
                     })}
                 </select>
             </div>

@@ -1,13 +1,10 @@
 import { fetchCompanies } from "@/api/companies";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function SearchButton({ info, getDataSearchResult, isButtonDisabled }: any ) {
-    const [companies, setCompanies] = useState();
-
     const fetchCompaniesData = async () => {
-        const data = await fetchCompanies({ state: info.state, city: info.city, pages: info.pages });
+        const data = await fetchCompanies({ UF: info.UF, state: info.state, city: info.city, pages: info.pages, datePeriod: info.datePeriod });
 
-        setCompanies(data);
         getDataSearchResult(data);
     };
 
