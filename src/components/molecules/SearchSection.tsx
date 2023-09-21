@@ -51,7 +51,7 @@ export default function SearchSection({ getDataSearchResult, getDataAboutSearch 
         });
     };
 
-    if (!params.UF || !params.city || !params.datePeriod) button = true;
+    if (!params.UF || !params.city || !params.datePeriod.startDate) button = true;
 
     return <>
         <div className="font-spacemono grid">
