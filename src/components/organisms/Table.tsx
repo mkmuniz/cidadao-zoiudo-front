@@ -17,12 +17,12 @@ export default function Table({ headerData, resultData }: any) {
         setCurrentPage(value);
     };
 
-    if (resultData) {
-        list = resultData.body.slice(0, resultData.body.length / filters.itensPerPage);
+    function getFilters (value: any) {
+        useFilters({ ...filters, ...value });
     };
 
-    const getFilters = (value: any) => {
-        useFilters({ ...filters, ...value });
+    if (resultData) {
+        list = resultData.body.slice(0, resultData.body.length / filters.itensPerPage);
     };
 
     return <>
