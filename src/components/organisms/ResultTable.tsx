@@ -22,10 +22,10 @@ export default function ResultTable({ data, filters, page}: any) {
                     return item;
                 };
             };
-        }).map((item: any) => {
-            return <ResultLine item={item} filters={filters} />
-        }): arrayPage.map((item: any) => {
-            return <ResultLine item={item} filters={filters} />
+        }).map((item: any, index: any) => {
+            return <ResultLine item={item} filters={filters} key={index} />
+        }): arrayPage.map((item: any, index: any) => {
+            return <ResultLine item={item} filters={filters} key={index} />
         })}
     </>;
 };

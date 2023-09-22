@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Pagination({ data, getCurrentPage }: any) {
-    const displayPageCount = 5;
+    const displayPageCount = 3;
     const totalPages = data.length;
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -27,7 +27,7 @@ export default function Pagination({ data, getCurrentPage }: any) {
     };
 
     return <>
-        <nav aria-label="Page navigation example" className="m-6">
+        <nav className="m-6">
             <ul className="flex items-center justify-center -space-x-px h-8 text-sm">
                 <li>
                     <Link scroll={false} href="#" className="flex items-center justify-center px-3 h-8 leading-tight rounded-r-lg" onClick={() => {

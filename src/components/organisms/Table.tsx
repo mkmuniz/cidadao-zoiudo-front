@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+'use client'
+
+import { useState } from "react";
 import FiltersSearchResult from "../molecules/SearchResult/Filters";
 import ResultHeader from "../molecules/SearchResult/Header";
 import ResultTable from "./ResultTable";
