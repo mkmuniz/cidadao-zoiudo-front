@@ -64,7 +64,6 @@ export default function Pagination({ data, getCurrentPage }: any) {
                 <li>
                     <Link scroll={false} href="#" className="flex items-center justify-center px-3 h-8 leading-tight rounded-r-lg" onClick={() => {
                         if (currentPage < totalPages) {
-                            console.log(Number(currentPage) + 1);
                             setCurrentPage(Number(currentPage) + 1)
                         }
                     }}>
