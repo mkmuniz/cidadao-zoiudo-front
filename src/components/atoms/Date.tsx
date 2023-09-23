@@ -22,6 +22,7 @@ export default function DatePicker({ getDate }: any) {
                     placeholder={"Selecione o período de busca"}
                     value={value}
                     onChange={handleValueChange}
+                    useRange={false}
                     displayFormat='DD-MM-YYYY' />
             </div>
             <div className="z-30 absolute inset-0 w-full h-full bg-white transition duration-200 ease-out transform translate-x-1 translate-y-1 rounded border-white border-x border-y group-hover:-translate-x-0 group-hover:-translate-y-0">
