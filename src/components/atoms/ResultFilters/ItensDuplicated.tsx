@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ItensDuplicated({ getFilter }: any) {
     return <>
-        <div className="relative w-full ml-6">
+        <div className="relative w-full ml-6 text-white">
             <div className="z-20 relative">
                 <select id="countries_disabled" onChange={(e) => {
                     if  (e.target.value === 'False') getFilter({ itensDuplicated: false });

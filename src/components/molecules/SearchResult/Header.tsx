@@ -4,7 +4,7 @@ import InformationsResultHeader from "../../atoms/ResultHeader/Informations";
 
 export default function ResultHeader({ props }: any) {
     return <>
-        <div className="grid grid-cols-1">
+        <div className="grid grid-cols-1 bg-black">
             <TitleResultHeader />
             <InformationsResultHeader props={...props} />
         </div>

@@ -17,7 +17,7 @@ export default function State({ getState }: any) {
     }, []);
 
     return <>
-        <div className="relative w-full">
+        <div className="relative w-full text-white">
             <div className="z-40 relative">
                 <select id="states" onChange={(e) => getState(JSON.parse(e.target.value))} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
                     <option selected>Escolha um Estado</option>
