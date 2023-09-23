@@ -3,7 +3,7 @@ import React from "react"
 export default function About() {
 
     return <>
-        <div className="grid font-spacemono">
+        <div className="grid font-spacemono bg-black">
             <div className="sm:p-6 p-3">
                 <span className="text-xl">
                 O AgentesDev, por meio de voluntários, criou uma solução tecnológica para tornar a fiscalização governamental acessível a todos. Através da nossa ferramenta de automação, todos podem investigar licitações no portal da transparência do governo, expondo contas bancárias idênticas entre diferentes empresas e contribuindo para combater o crime de empresas fantasmas.                </span>

@@ -54,7 +54,7 @@ export default function SearchSection({ getDataSearchResult, getDataAboutSearch 
     if (!params.UF || !params.city || !params.datePeriod.startDate) button = true;
 
     return <>
-        <div className="font-spacemono grid">
+        <div className="font-spacemono grid bg-black">
             <span className="text-3xl sm:m-6 m-3">
                 Comece a fiscalizar
             </span>
