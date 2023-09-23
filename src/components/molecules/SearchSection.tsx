@@ -55,13 +55,13 @@ export default function SearchSection({ getDataSearchResult, getDataAboutSearch 
 
     return <>
         <div className="font-spacemono grid">
-            <span className="text-3xl m-6">
+            <span className="text-3xl sm:m-6 m-3">
                 Comece a fiscalizar
             </span>
-            <span className="text-xl m-6">
+            <span className="text-xl sm:m-6 m-3">
                 Escolha um estado, uma cidade, e o período de Início de Vigência. Nossa ferramenta irá abrir seu navegador padrão sozinha, pesquisar pelas licitações, e trazer os resultados abaixo. Isso pode levar alguns minutos. Para ver apenas licitações com contas bancárias idênticas, selecione essa opção nos filtros.
             </span>
-            <div className="grid grid-cols-3 m-6">
+            <div className="grid grid-cols-3 sm:m-6 m-3">
                 <div className="flex items-center">
                     <State getState={getState} />
                 </div>

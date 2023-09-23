@@ -1,7 +1,7 @@
 export default function ResultLine({ item, filters }: any) {
     return <>
         {filters.fieldsFilter ?
-            <div className="rounded border-white w-6/7 border-x border-y m-6">
+            <div className="rounded border-white w-6/7 border-x border-y sm:m-6 m-3">
                 <span className="text-2xl font-spacemono m-6">Convênio: {item.convenio} </span>
                 {filters.fieldsFilter.todos ? <>
                     <p className="font-spacemono m-2 ml-6">Modalidade: {item.modalidade} </p>
@@ -53,7 +53,7 @@ export default function ResultLine({ item, filters }: any) {
                     <p className="font-spacemono m-2 ml-6">Órgão: {item.orgao} </p>
                     <p className="font-spacemono m-2 ml-6">Objeto de convênio: {item.objetoConvenio} </p>
                     <p className="font-spacemono m-2 ml-6">Dados Bancários: </p>
-                    <ul className="font-spacemono ml-44">
+                    <ul className="font-spacemono sm:ml-44 ml-20">
                         <li>
                             Banco: {item.dadosBancarios.banco}
                         </li>

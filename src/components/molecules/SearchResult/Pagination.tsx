@@ -27,7 +27,7 @@ export default function Pagination({ data, getCurrentPage }: any) {
     };
 
     return <>
-        <nav className="m-6">
+        <nav className="sm:m-6 m-3">
             <ul className="flex items-center justify-center -space-x-px h-8 text-sm">
                 <li>
                     <Link scroll={false} href="#" className="flex items-center justify-center px-3 h-8 leading-tight rounded-r-lg" onClick={() => {
@@ -36,20 +36,20 @@ export default function Pagination({ data, getCurrentPage }: any) {
                         };
                     }}>
                         <span className="sr-only">Previous</span>
-                        <svg className="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <svg className="sm:w-2.5 sm:h-2.5 w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
                         </svg>
                     </Link>
                 </li>
                 {start > 1 && (
                     <li>
-                        <span className="px-3 h-8">...</span>
+                        <span className="sm:px-3 sm:h-8 px-1 h-4">...</span>
                     </li>
                 )}
                 {
                     pages.slice(start - 1, end).map((page: number) => {
                         return <>
-                            <li key={page} className={`flex items-center justify-center px-3 h-8 ${page === currentPage ?'bg-standard rounded text-black font-spacemono' : ''}`}>
+                            <li key={page} className={`flex items-center justify-center sm:px-3 sm:h-8 px-2 h-6 ${page === currentPage ?'bg-standard rounded text-black font-spacemono' : ''}`}>
                                 <Link href={'/'} onClick={() => setCurrentPage(page)} scroll={false}>
                                     {page}
                                 </Link>
@@ -58,7 +58,7 @@ export default function Pagination({ data, getCurrentPage }: any) {
                     })}
                 {end < totalPages && (
                     <li>
-                        <span className="px-3 h-8">...</span>
+                        <span className="sm:px-3 sm:h-8 px-1 h-4">...</span>
                     </li>
                 )}
                 <li>
@@ -68,7 +68,7 @@ export default function Pagination({ data, getCurrentPage }: any) {
                         }
                     }}>
                         <span className="sr-only">Next</span>
-                        <svg className="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <svg className="sm:w-2.5 sm:h-2.5 w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                         </svg>
                     </Link>
