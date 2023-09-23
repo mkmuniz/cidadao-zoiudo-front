@@ -27,7 +27,7 @@ export default function Pagination({ data, getCurrentPage }: any) {
     };
 
     return <>
-        <nav className="sm:m-6 m-3">
+        <nav className="sm:m-6 m-3 bg-black text-white">
             <ul className="flex items-center justify-center -space-x-px h-8 text-sm">
                 <li>
                     <Link scroll={false} href="#" className="flex items-center justify-center px-3 h-8 leading-tight rounded-r-lg" onClick={() => {

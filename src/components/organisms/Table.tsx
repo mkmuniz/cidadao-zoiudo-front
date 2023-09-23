@@ -26,13 +26,13 @@ export default function Table({ headerData, resultData }: any) {
     };
 
     return <>
-        <div className="w-full h-full bg-black">
+        <div className="w-full h-full">
             <div className="border rounded border-white m-6">
                 <ResultHeader props={...headerData} />
                 <FiltersSearchResult getFilters={GetFilters} />
                 {resultData ? <ResultTable data={resultData} filters={filters} page={currentPage} /> : <>
-                    <div className="w-full flex items-center justify-center">
-                        <span className="font-spacemono text-2xl text-center">Sem resultados</span>
+                    <div className="w-full flex items-center justify-center bg-black">
+                        <span className="font-spacemono text-2xl text-center text-white">Sem resultados</span>
                     </div>
                 </>}
                 {
