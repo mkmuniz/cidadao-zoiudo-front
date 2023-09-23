@@ -26,7 +26,7 @@ export default function Table({ headerData, resultData }: any) {
     };
 
     return <>
-        <div className="w-full h-full">
+        <div className="w-full h-full bg-black">
             <div className="border rounded border-white m-6">
                 <ResultHeader props={...headerData} />
                 <FiltersSearchResult getFilters={GetFilters} />
