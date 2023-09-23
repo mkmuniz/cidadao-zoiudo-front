@@ -4,7 +4,7 @@ export default function ItensPerPage({ getFilter }: any) {
     return <>
         <div className="relative w-full ml-6 text-white">
             <div className="z-20 relative">
-                <select id="countries_disabled" onChange={(e) => getFilter({ 'itensPerPage': e.target.value })} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                <select id="countries_disabled" onChange={(e) => getFilter({ 'itensPerPage': e.target.value })} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 text-white">
                     <option selected value={3}>Mostrar 3 por página.</option>
                     <option value={5}>Mostrar 5 por página.</option>
                     <option value={10}>Mostrar 10 por página.</option>

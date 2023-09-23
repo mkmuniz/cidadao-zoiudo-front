@@ -7,7 +7,7 @@ export default function ItensDuplicated({ getFilter }: any) {
                 <select id="countries_disabled" onChange={(e) => {
                     if  (e.target.value === 'False') getFilter({ itensDuplicated: false });
                     else if (e.target.value === 'True') getFilter({ itensDuplicated: true });
-                }} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                }} className="z-40 bg-black border-y border-x w-5/6 border-spacing-11 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 text-white">
                     <option selected value={"False"}>Mostrar todas licitações</option>
                     <option value={"True"}>Mostrar apenas as licitações duplicadas</option>
                 </select>
