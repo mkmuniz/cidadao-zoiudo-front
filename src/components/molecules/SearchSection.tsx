@@ -59,9 +59,7 @@ export default function SearchSection({ getDataSearchResult, getDataAboutSearch 
                 Comece a fiscalizar
             </span>
             <span className="text-xl m-6">
-                In tempor ultrices lectus a posuere. Vivamus gravida metus lorem, eget facilisis arcu finibus nec. Ut et lacus tincidunt, faucibus elit nec, interdum diam. Sed at elementum libero, eget consectetur elit. Proin elementum nulla sit amet nisi consequat, id aliquam leo efficitur. Phasellus sit amet enim placerat, pulvinar neque eget, faucibus massa.
-                Morbi id orci imperdiet odio facilisis dictum. Donec rhoncus arcu vestibulum ante sollicitudin, sed posuere orci varius.
-                Nulla lacinia enim id ipsum blandit, ut bibendum dui varius. Pellentesque feugiat lobortis auctor.
+                Escolha um estado, uma cidade, e o período de Início de Vigência. Nossa ferramenta irá abrir seu navegador padrão sozinha, pesquisar pelas licitações, e trazer os resultados abaixo. Isso pode levar alguns minutos. Para ver apenas licitações com contas bancárias idênticas, selecione essa opção nos filtros.
             </span>
             <div className="grid grid-cols-3 m-6">
                 <div className="flex items-center">

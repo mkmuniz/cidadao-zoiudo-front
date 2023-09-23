@@ -6,13 +6,11 @@ export default function About() {
         <div className="grid font-spacemono">
             <div className="p-6">
                 <span className="text-xl">
-                    Quisque viverra magna tincidunt ultricies cursus. Nullam sit amet nunc ut mauris lacinia vehicula. Vivamus finibus nunc vel fringilla dictum. Nullam sed sem sed mi vestibulum ornare. Maecenas fermentum, dolor sed consequat vehicula, ligula nulla tempor massa, in aliquet libero nibh quis mi. Sed mattis metus sit amet nunc volutpat fringilla. Nullam dapibus tellus fringilla tellus sollicitudin scelerisque.
-                </span>
+                O AgentesDev, por meio de voluntários, criou uma solução tecnológica para tornar a fiscalização governamental acessível a todos. Através da nossa ferramenta de automação, todos podem investigar licitações no portal da transparência do governo, expondo contas bancárias idênticas entre diferentes empresas e contribuindo para combater o crime de empresas fantasmas.                </span>
             </div>
             <div className="bg-standard w-full h-full p-6">
                 <span className="text-xl text-black">
-                    Quisque viverra magna tincidunt ultricies cursus. Nullam sit amet nunc ut mauris lacinia vehicula. Vivamus finibus nunc vel fringilla dictum. Nullam sed sem sed mi vestibulum ornare. Maecenas fermentum, dolor sed consequat vehicula, ligula nulla tempor massa, in aliquet libero nibh quis mi. Sed mattis metus sit amet nunc volutpat fringilla. Nullam dapibus tellus fringilla tellus sollicitudin scelerisque.
-                </span>
+                Sua participação ativa é essencial para tornar nossa ferramenta eficaz. O Brasil possui mais de 5.000 cidades, tornando a tarefa de fiscalização algo monumental. Além disso, estamos empenhados em expandir o projeto, criando novas ferramentas de fiscalização. Junte-se a nós nessa missão de combate à corrupção!                </span>
             </div>
         </div>
     </>
