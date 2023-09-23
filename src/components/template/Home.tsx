@@ -12,14 +12,16 @@ export default function HomeTemplate() {
     const getDataAboutSearch = (values: any) => {
         setSearchData(values);
     };
-    
+
     const getDataSearchResult = (values: any) => {
         setData(values);
     };
 
     return <>
-        <Apresentation />
-        <SearchSection getDataAboutSearch={getDataAboutSearch} getDataSearchResult={getDataSearchResult} />
-        <Table headerData={{...searchData}} resultData={dataResult} />
+        <div className="bg-black">
+            <Apresentation />
+            <SearchSection getDataAboutSearch={getDataAboutSearch} getDataSearchResult={getDataSearchResult} />
+            <Table headerData={{ ...searchData }} resultData={dataResult} />
+        </div>
     </>;
 };
