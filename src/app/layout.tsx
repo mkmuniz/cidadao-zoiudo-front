@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>CidadãoZoiudo</title>
+        <title>Cidadão Zoiudo</title>
+        <meta name="description" content="Tô de olho" />
+        <meta name="author" content="John Galt" />
         <link
           href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
           rel="stylesheet"
