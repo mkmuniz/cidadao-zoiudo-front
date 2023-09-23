@@ -1,4 +1,3 @@
-import { fetchCompanies } from "@/api/companies";
 import React from "react";
 
 export default function FilterButton({ options, getFilter, setOpen }: any) {
