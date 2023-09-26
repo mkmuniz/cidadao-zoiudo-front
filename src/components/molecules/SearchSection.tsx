@@ -7,7 +7,7 @@ import State from "../atoms/State";
 import SearchButton from "../atoms/Search";
 import { format } from "date-fns";
 
-export default function SearchSection({ getDataSearchResult, getDataAboutSearch }: any) {
+export default function SearchSection({ getDataSearchResult, getDataAboutSearch, isLoading }: any) {
     const [params, setParams]: any = useState({
         UF: null,
         city: null,
@@ -73,7 +73,7 @@ export default function SearchSection({ getDataSearchResult, getDataAboutSearch 
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">
-                <SearchButton info={params} isButtonDisabled={button} getDataSearchResult={getDataSearchResult} />
+                <SearchButton info={params} isButtonDisabled={button} getDataSearchResult={getDataSearchResult} isLoading={isLoading} />
             </div>
         </div>
     </>;
