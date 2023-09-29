@@ -6,8 +6,7 @@ export async function fetchCompanies(body: any) {
 
         return data;
     } catch (err: any) {
-        console.log(err);
-
+        console.error(err);
         return err;
     };
 };
