@@ -19,7 +19,7 @@ const config: Config = {
         'standard': '#FFC700',
       },
       fontFamily: {
-        spacemono: ["Space Mono"],
+        spacemono: ["Roboto"],
       },
     },
   },
