@@ -78,71 +78,71 @@ export default function FilterByType({ getFilter }: any) {
                                     <input id="default-checkbox" type="checkbox" checked={options.todos} onChange={() => {
                                         if (options.todos) setOptions({ ...options, todos: false });
                                         else setOptions({ ...options, todos: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
                                     <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium rounded text-white">Todos</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="default-checkbox" type="checkbox" checked={options.modalidade} onChange={() => {
                                         if (options.modalidade) setOptions({ ...options, modalidade: false });
                                         else setOptions({ ...options, modalidade: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
                                     <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium rounded text-white">Modalidade</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input checked={options.situacao} onChange={() => {
                                         if (options.situacao) setOptions({ ...options, situacao: false });
                                         else setOptions({ ...options, situacao: true });
-                                    }} id="checked-checkbox" type="checkbox" className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Situação</label>
+                                    }} id="checked-checkbox" type="checkbox" className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium">Situação</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="default-checkbox" type="checkbox" checked={options.proponente} onChange={() => {
                                         if (options.proponente) setOptions({ ...options, proponente: false });
                                         else setOptions({ ...options, proponente: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Proponente</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium">Proponente</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="checked-checkbox" type="checkbox" checked={options.orgao} onChange={() => {
                                         if (options.orgao) setOptions({ ...options, orgao: false });
                                         else setOptions({ ...options, orgao: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Órgão</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium">Órgão</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="default-checkbox" type="checkbox" checked={options.categorias} onChange={() => {
                                         if (options.categorias) setOptions({ ...options, categorias: false });
                                         else setOptions({ ...options, categorias: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Categorias</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium">Categorias</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="checked-checkbox" type="checkbox" checked={options.objetoConvenio} onChange={() => {
                                         if (options.objetoConvenio) setOptions({ ...options, objetoConvenio: false });
                                         else setOptions({ ...options, objetoConvenio: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Objeto de Convênio</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium">Objeto de Convênio</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="default-checkbox" type="checkbox" checked={options.dadosBancarios} onChange={() => {
                                         if (options.dadosBancarios) setOptions({ ...options, dadosBancarios: false });
                                         else setOptions({ ...options, dadosBancarios: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Dados bancários</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium">Dados bancários</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="checked-checkbox" type="checkbox" checked={options.dataProposta} onChange={() => {
                                         if (options.dataProposta) setOptions({ ...options, dataProposta: false });
                                         else setOptions({ ...options, dataProposta: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Data da Proposta</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium">Data da Proposta</label>
                                 </div>
                                 <div className="flex items-center">
                                     <input id="checked-checkbox" type="checkbox" checked={options.dataLimite} onChange={() => {
                                         if (options.dataLimite) setOptions({ ...options, dataLimite: false });
                                         else setOptions({ ...options, dataLimite: true });
-                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-2" />
-                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium dark:text-gray-300">Data Limite</label>
+                                    }} className="w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 focus:ring-2" />
+                                    <label htmlFor="checked-checkbox" className="ml-2 text-sm font-medium">Data Limite</label>
                                 </div>
                                 <div className="w-full flex items-center justify-center">
                                     <FilterButton options={options} getFilter={getFilter} setOpen={setOpen} />
